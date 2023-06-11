@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(asset/back.jpg);
+}
+
+.container{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+
+.container ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+    position: relative;
+}
+.container ul li a{
+    text-decoration: none;
+    color: rgb(241, 228, 228);
+    text-transform: uppercase;
+}
+.container ul li::after{
+    content: '';
+    clear: both;
+    display: block;
+    height: 1.5px;
+    width: 0%;
+    background: #37cfc0;
+    position: absolute;
+    transition: 0.9s;
+}
+
+.container ul li:hover::after{
+    width: 100%;
+}
+/*end of container part*/
+
+.content{
+    width: 100%;
+    color:wheat;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+.button button{
+    width: 200px;
+    padding: 15px;
+    border-radius: 30px;
+    background:transparent;
+    font-weight: 400;
+    text-align: center;
+    color: wheat;
+    border: 2px solid rgb(2, 2, 2);
+    position: relative;
+    cursor: pointer;
+}
+
+.button span{
+    background: rgb(238, 18, 18);
+    width: 0;
+    height: 100%;
+    transition: 1s;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 30px;
+    z-index: -1;
+}
+
+.button button:hover span
+{
+    width: 100%;
+   
+}
+.button button:hover
+{
+    border: none;
+    color: black;
+    font-weight: bold;
+}

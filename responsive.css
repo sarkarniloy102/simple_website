@@ -1,0 +1,20 @@
+@media  screen and (max-width:980px) {
+    .logoo{
+        width: 100%;
+    }
+    .container{
+        width: 100%;
+        display: inline;
+        text-align: center;
+    }
+    .logo{
+        width: 160px;
+    }
+    .container ul li{
+        margin-top: 20px;
+        margin-right: 8px
+    }
+    .content h1{
+        margin-top: 150px;
+    }
+}
